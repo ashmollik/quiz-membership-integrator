@@ -1,6 +1,6 @@
 === Quiz Membership Integrator ===
 Contributors: @ashmollik
-Tags: Quiz Maker,Paid Membership Pro, Pmpro, Integrator,Integration,qmi,Quiz Membership
+Tags: Quiz Maker,Paid Membership Pro,Integration,qmi,Quiz Membership Integrator
 Donate link: https://facebook.com/AshiqurRahmanMollik/
 Requires at least: 6.5
 Tested up to: 6.7.1
@@ -80,6 +80,10 @@ Yes! The plugin is translation-ready. You can translate the plugin into your pre
 To uninstall the plugin, simply go to Plugins > Installed Plugins and click Deactivate and then Delete.
 
 
+== Screenshots ==
+1. Screenshot 1: The plugin\'s settings page where you configure quiz integration. Screenshot URL: ./assets/screenshots/screenshot-1.png
+2. Screenshot 2: A view of the user\'s membership level upgrade. Screenshot URL: ./assets/screenshots/screenshot-2.png
+
 == Changelog ==
 1.0.0
 Initial Release
@@ -91,4 +95,3 @@ Plugin automatically upgrades membership levels upon quiz completion.
 == Upgrade Notice ==
 Version 1.0.0
 Initial Release: If you are upgrading from a previous version, no special steps are required. Simply install and activate the plugin as usual.
-If you’re using an earlier version of Quiz Membership Integrator, you will need to deactivate and delete the old version before installing this release.
