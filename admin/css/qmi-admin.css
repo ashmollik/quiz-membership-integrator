@@ -1,0 +1,333 @@
+/* General container styling */
+.wrap {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note {
+    font-size: 16px;
+}
+
+.developer{
+    /*background-color: #ddd;*/
+    /*padding: 10px;*/
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    border: 1px solid transparent; /* Creates the space for the gradient */
+    border-radius: 3px; /* Use 50% for circular elements */
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    background-origin: border-box; /* Ensures the gradient stays on the border */
+    background-clip: border-box; /* Applies the gradient to the border */
+}
+
+.developer > * {
+  background: #1a0000; /* Inner background for content */
+  border-radius: inherit; /* Matches the border's shape */
+  padding: 15px;
+  margin: 15px;
+}
+
+.developer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #F9CC35;
+    transition: color 0.5s ease-in-out; /* Smooth transition for color */
+}
+
+.developer a:hover{
+    color: #632CCD;
+}
+
+.developer h3 {
+    color: #f0edff;
+}
+
+/* Style for the icon link */
+.developer .icon-link {
+    display: inline-flex; /* Ensures the icon aligns with the text */
+    align-items: center; /* Vertically centers the icon with the text */
+    font-size: 1em;
+    color: #DE6D51; 
+    text-decoration: none;
+    margin-left: 5px; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+/* Hover effect for the icon */
+.developer .icon-link:hover {
+    color: #632CCD; 
+}
+
+/* Additional styling for the icon */
+.developer .icon-link i {
+    vertical-align: middle;
+}
+
+/* Headings */
+.wrap h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraph */
+.qmi-content p {
+    margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.qmi-condition input[type="number"] {
+    width: calc(33% - 10px);
+    margin: 5px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Button styling */
+button.qmi-remove-condition {
+    background: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.5s ease-in-out;
+}
+
+button.qmi-remove-condition:hover {
+    background: #8b1814;
+}
+
+#qmi-add-condition {
+    background: linear-gradient(to left, #f58529, #f77737, #d7008e, #4c2a92);
+    color: #fff;
+    font-weight: 600;
+    /*letter-spacing: 1px;*/
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 25px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-size: 200% 200%;  /* Make the gradient cover more space for smooth transition */
+    background-position: left center;  /* Start position */
+    transition: background-position 0.5s ease-in-out; /* Smooth transition */
+}
+
+#qmi-add-condition:hover {
+    background-position: right center;  /* End position for the hover effect */
+    
+}
+
+
+/* Condition container styling */
+.qmi-condition {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#qmi-conditions-container {
+    margin-left: -100px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background: #f9f9f9;
+}
+
+.qmi-condition:last-child {
+    border-bottom: none;
+}
+
+/* Logo and Content Layout */
+.qmi-settings-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; /* Adjust top padding as needed */
+}
+
+.qmi-content-container {
+    display: flex;
+    justify-content: space-between; /* Align content and logo */
+    align-items: flex-start; /* Align items at the start */
+    max-width: 900px; /* Limit maximum width if needed */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.qmi-content {
+    flex: 1; /* Expand to take remaining space */
+    text-align: left; /* Left align content */
+}
+
+.qmi-logo-container {
+    flex-shrink: 0; /* Prevent logo from shrinking */
+    margin-left: 20px; /* Adjust spacing between content and logo */
+}
+
+.qmi-logo {
+    max-width: 100px; /* Adjust logo size */
+    height: auto;
+    vertical-align: middle;
+}
+
+.qmi-form-container {
+    width: 100%; /* Ensure form container takes full width */
+    margin-top: 20px; /* Adjust top margin as needed */
+}
+
+/* Row number styling */
+.qmi-row-number {
+    flex: 0 0 30px; /* Fixed width for the row number */
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+/* Active & Deactive */
+
+.qmi-toggle {
+    position: relative;
+    display: inline-block;
+    width: 36px; /* Adjusted width to fit smaller round shape */
+    height: 18px; /* Adjusted height to fit smaller round shape */
+}
+
+.qmi-toggle input {
+    display: none;
+}
+
+.qmi-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 1px; /* Adjusted top position for centering */
+    left: 1px; /* Adjusted left position for centering */
+    right: 1px; /* Adjusted right position for centering */
+    bottom: 1px; /* Adjusted bottom position for centering */
+    background-color: #f1c40f; /* Yellow when inactive */
+    transition: 0.4s;
+    border-radius: 50px; /* Increased border-radius to make it round */
+}
+
+.qmi-slider:before {
+    position: absolute;
+    content: "";
+    height: 14px; /* Adjusted height of the knob */
+    width: 14px; /* Adjusted width of the knob */
+    left: 2px; /* Adjusted left position of the knob */
+    bottom: 2px; /* Adjusted bottom position of the knob */
+    background-color: #9034db; /* Blue color for the knob */
+    transition: 0.4s;
+    border-radius: 50%; /* Rounded shape for the knob */
+}
+
+input:checked + .qmi-slider {
+    background-color: #27ae60; /* Green when active */
+}
+
+input:checked + .qmi-slider:before {
+    transform: translateX(16px); /* Adjusted translation for the knob */
+}
+
+.total_active_conditions {
+    margin-left: -50px;
+    font-weight: 700;
+}
+
+/* Condition Header */
+
+.qmi-conditions-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.qmi-column-header {
+    flex: 1 2 3;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    /*box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);*/
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.qmi-condition {
+    margin-bottom: 10px;
+}
+
+.qmi-remove-condition {
+    margin-left: 10px;
+}
+
+/* Table Header */
+
+
+
+.qmi-column-header {
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    background-color: #f0f0f0;
+}
+
+.qmi-column-header:nth-child(1) {
+    flex: 0 0 40px; /* No flex-grow or flex-shrink, fixed at 72px */
+    background-color: #6228d7;
+    /*background: linear-gradient(90deg, #6228d7, #ee2a7b, #f9ce34); */
+    color: #fff;
+}
+
+.qmi-column-header:nth-child(2) {
+    flex: 0 0 425px; /* No flex-grow or flex-shrink, fixed at 438px */
+    /*background-color: #8fff33cc;*/
+    background: linear-gradient(90deg, #f9ce34, #ee2a7b, #6228d7); /* Instagram gradient */
+    color: #fff;
+}
+
+.qmi-column-header:nth-child(3) {
+    flex: 0 0 425px; /* No flex-grow or flex-shrink, fixed at 438px */
+    /*background-color: #21ffaaa8;*/
+    background: linear-gradient(90deg, #6228d7, #ee2a7b, #f9ce34); /* Instagram gradient */
+    color: #fff;
+}
+
+.qmi-column-header:nth-child(4) {
+    flex: 0 0 415px; /* No flex-grow or flex-shrink, fixed at 438px */
+    /*background-color: #26ca108f;*/
+    background: linear-gradient(90deg, #f9ce34, #ee2a7b, #6228d7); /* Instagram gradient */
+    color: #fff;
+}
+
+.qmi-column-header:nth-child(5) {
+    flex: 0 0 40px; /* No flex-grow or flex-shrink, fixed at 50px */
+    background-color: #6228d7;
+    color: #fff;
+}
+
+.qmi-column-header:nth-child(6) {
+    flex: 0 0 50px; /* No flex-grow or flex-shrink, fixed at 75px */
+    /*background-color: #ff0800cb;*/
+    background-color: #ee2a7b;
+    color: #fff;
+}
+
