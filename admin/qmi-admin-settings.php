@@ -16,7 +16,7 @@ function qmi_add_admin_menu() {
         'quiz-membership-integrator',
         'qmi_settings_page',
         'dashicons-controls-repeat',
-        plugin_dir_url( __FILE__ ) . 'images/qmi-logo.png',
+       
         100
     );
 }
@@ -69,10 +69,12 @@ function qmi_settings_page() {
            	 			echo wp_get_attachment_image( $logo_image_id, 'full', false, array( 'alt' => esc_attr__( 'QMI Logo', 'quiz-membership-integrator' ) ) );
         				} else {
             			// Fallback if not found in media library, use img tag with URL
-            			echo '<img src="' . esc_url( $logo_url ) . '" alt="' . esc_attr__( 'QMI Logo', 'quiz-membership-integrator' ) . '" class="qmi-logo">';
+//             			echo '<img src="' . esc_url( $logo_url ) . '" alt="' . esc_attr__( 'QMI Logo', 'quiz-membership-integrator' ) . '" class="qmi-logo">';
        					 }
     				?>
 			</div>
+
+
 
         </div>
         <div class="qmi-form-container">

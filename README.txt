@@ -3,7 +3,7 @@ Contributors: @ashmollik
 Tags: Quiz Maker,Paid Membership Pro,Integration,qmi,Quiz Membership Integrator
 Donate link: https://facebook.com/AshiqurRahmanMollik/
 Requires at least: 6.5
-Tested up to: 6.7.1
+Tested up to: 6.7
 Requires PHP: 7.4
 Stable tag: 1.0.0
 License: GPL-2.0+
